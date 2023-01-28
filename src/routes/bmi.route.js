@@ -4,7 +4,7 @@ const { CalculateBMI, GetCalculation } = require("../controller/bmi.controller")
 const router = express.Router();
 
 router.route("/calculatebmi").post(CalculateBMI);
-router.route("/getcalculation").get(GetCalculation);
+router.route("/getcalculation").post(GetCalculation);
 
 
 module.exports=router;
